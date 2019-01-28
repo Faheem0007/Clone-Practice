@@ -1,0 +1,300 @@
+$gradient :linear-gradient(to bottom right, #50a3a2 0%, $main-color 100%);
+$g :linear-gradient(#50a3a2 100%, #2eca7f 10%);
+
+.main {
+    width: 100%;
+    height: 140vh;
+    background: $gradient;
+
+    .menu {
+        width: 80px;
+        background-color: #fff;
+        border-radius: 8px;
+        position: absolute;
+        left: 10%;
+        top: 43vh;
+        text-align: center;
+        overflow: hidden;
+
+
+        .m4 {
+            border: none;
+        }
+
+        .m1,
+        .m2,
+        .m3,
+        .m4 {
+            height: 90px;
+            border-bottom: 1px solid #eee;
+            width: 100%;
+            padding-top: 20px;
+            box-sizing: border-box;
+
+            &:hover {
+                color: #2eca7f;
+                transition: 1s;
+            }
+        }
+
+    }
+
+    .card {
+        width: 35%;
+        height: 90vh;
+        background-color: #fff;
+        border: 1px solid #eee;
+        position: relative;
+        border-radius: 5px;
+        left: 16%;
+        top: 25vh;
+        z-index: 9;
+
+        .img {
+            width: 100%;
+            height: 60%;
+            position: absolute;
+
+            img {
+                width: 100%;
+                height: 100%;
+                clip-path: polygon(50% 0%, 100% 0, 100% 70%, 48% 81%, 0 59%, 0 0);
+            }
+
+        }
+
+        .profile_img {
+            position: absolute;
+            left: 37%;
+            top: 35%;
+
+            img {
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                box-shadow: 0px 0px 10px grey;
+                clip-path: none;
+            }
+        }
+
+        .details {
+            position: absolute;
+            top: 60%;
+            left: 15%;
+            width: 70%;
+            margin-top: -30px;
+
+            h1 {
+                text-align: center;
+                font-weight: lighter;
+            }
+
+            i {
+                font-weight: lighter;
+                font-size: 20px;
+                margin: 10px;
+                position: relative;
+                top: 10px;
+                transition: .6s;
+                cursor: pointer;
+                left: 80px;
+
+                &:hover {
+                    color: #2eca7f;
+                    transition: .6s;
+                }
+            }
+        }
+
+        .contact {
+            width: 100%;
+            text-align: center;
+            border-top: 1px solid #eee;
+            position: absolute;
+            cursor: pointer;
+            height: 70px;
+            bottom: 0;
+
+            h1 {
+                font-weight: lighter;
+                margin-top: 5px;
+
+            }
+        }
+
+        .about,
+        .resume,
+        .info,
+        .bog {
+            width: 110%;
+            top: 2.5%;
+            position: absolute;
+            border-radius: 5px;
+            left: 50%;
+            opacity: 0;
+            overflow-y: scroll;
+            z-index: -1;
+            transition: all 1s;
+            background-color: #fff;
+            height: 95%;
+
+            h3 {
+                font-weight: lighter;
+                margin-left: 10%;
+            }
+
+            .hr {
+                width: 80%;
+                margin: 0 auto;
+                color: #eee;
+                border-color: #eee;
+                background-color: #eee;
+            }
+
+            .p {
+                width: 80%;
+                font-size: 15px;
+                letter-spacing: .5px;
+                line-height: 20px;
+                top: 8%;
+                position: absolute;
+                left: 10%;
+                right: 10%;
+            }
+
+            .age {
+                position: absolute;
+                left: 10%;
+                top: 35%;
+                color: #bbbbbb;
+                font-size: 14px;
+            }
+
+            .add {
+                position: absolute;
+                font-size: 14px;
+                top: 35%;
+                right: 10%;
+                color: #bbbbbb;
+            }
+
+            .service {
+                position: absolute;
+                width: 100%;
+                top: 50%;
+
+                .sdiv {
+                    width: 40%;
+                    position: relative;
+                    display: inline-block;
+                    border: 1px solid #eee;
+                    height: 200px;
+                    left: 10%;
+                    overflow: hidden;
+
+                    .fa {
+                        width: 50px;
+                        height: 50px;
+                        margin: 20px;
+                        border-radius: 50%;
+                        background: #31ce8275;
+                        text-align: center;
+                        box-sizing: border-box;
+                        padding-top: 15px;
+                        color: #2eca7f;
+                    }
+
+                    h3 {
+                        font-size: 13px;
+                        position: absolute;
+                        left: 2%;
+                        font-weight: bold;
+                        top: 35%;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        position: absolute;
+                        top: 45%;
+                        margin-left: 5%;
+                        margin-right: 5%;
+                    }
+                }
+            }
+        }
+
+        .resume {
+            ul {
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    width: 45%;
+                    border: 1px solid #eee;
+
+                    i {
+                        font-size: 20px;
+                        padding: 10px;
+                        font-weight: lighter;
+                    }
+
+                }
+            }
+        }
+
+        .info {
+            ul {
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    width: 80%;
+                    margin: 0 auto;
+
+                    input {
+                        width: 100%;
+                        height: 35px;
+                        margin-top: 5%;
+                    }
+                }
+
+                button {
+                    @include btn('sm');
+                    margin-top: 50px;
+
+                    &:hover {
+                        transition: 0.5s;
+                        background-color: #2eca7f;
+                    }
+                }
+            }
+        }
+
+        .bog {
+            ul {
+                li:not(:nth-of-type(1)) {
+                    margin-top: 30px;
+                }
+
+                li {
+                    width: 80%;
+                    height: 250px;
+                    background-color: #fff;
+                    list-style: none;
+                    margin: 0 auto;
+                    box-shadow: 0px 1px 4px grey;
+                    margin-right: 70px;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    h3,
+                    p {
+                        text-align: center;
+                        margin-top: -10px;
+                    }
+                }
+            }
+        }
+
+    }
+}

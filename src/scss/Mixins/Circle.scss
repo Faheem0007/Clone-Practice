@@ -1,0 +1,60 @@
+@mixin  circle($size) {
+    @if($size == "lg"){ 
+            width: 300px;
+            height: 300px;
+            border: 18px solid #4ac3f3;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounce1 30s infinite linear alternate;
+            top: 0px;
+            right: 450px;
+        
+
+        @keyframes bounce1 {
+            0% {
+                top: 0px;
+            }
+
+            10% {
+                top: 40px;
+            }
+
+            20% {
+                top: 0px;
+            }
+
+            30% {
+                top: 40px;
+            }
+
+            40% {
+                top: 0px;
+            }
+
+            50% {
+                top: 40px;
+            }
+
+            60% {
+                top: 0px;
+            }
+
+            70% {
+                top: 40px;
+            }
+
+            80% {
+                top: 0px;
+            }
+
+            90% {
+                top: 40px;
+            }
+
+            100% {
+                top: 0px;
+            }
+
+        }
+    }
+}

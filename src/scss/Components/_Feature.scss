@@ -1,0 +1,49 @@
+.container-fluid{
+    .circle{
+        @include circle('lg');
+        right:0;
+        width:80%;
+        height: 80%;
+        border-radius: 80%;
+        border:30px solid $main-color; 
+    }
+    .img-holder{
+
+        img{
+            position: absolute;
+            top:0;
+            left:0;
+        }
+
+        .L-img{
+            position: relative;
+            left:0;
+            width:100%;
+            top:60px;
+        }
+    }
+
+    .text-holder{
+        margin-top:80px;
+        h1{
+            font-weight: bold;
+        }
+
+        p{
+            margin-right:10px;
+            margin-top:20px;
+
+        }
+
+        .tic{
+                margin-top:40px;
+            p{
+                margin-top:10px;
+                span{
+                    margin:10px;
+                    color:$main-color;
+                }
+            }
+        }
+    }
+}

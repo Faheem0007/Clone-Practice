@@ -1,0 +1,77 @@
+.container-fluid{
+
+    margin-bottom: 150px;
+    .abt-content{
+        margin-top:0px;
+        
+        
+        h1{
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+        }
+        .line{
+            width:150px;
+            height:4px;
+            background-color: $main-color;
+            margin:0 auto;
+        }
+        p{
+            margin-right:15%;
+            margin-left:15%;
+            margin-top:30px;
+            text-align: center;
+        }
+
+    }
+
+    .text-holder{
+        width:100%;
+        margin-left:3.3%;
+        margin-top:100px;
+
+        
+        &:hover .icon{
+            box-shadow: 0px 10px 30px $main-color;
+            transition: .5s;
+        }
+
+        .icon{
+            font-size: 40px;
+            text-align: center;
+            width:100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: #fff;
+            margin:0 auto;
+            margin-top:50px;
+            box-sizing: border-box;
+            transition: .5s;
+            padding-top:20px;
+            color: $main-color;
+            box-shadow: 3px 3px 4px lightgrey;
+
+            &:hover{
+                box-shadow: 0px 10px 30px $main-color;
+                transition: .5s;
+            }
+        }
+
+        .detials{
+
+            h1{
+                letter-spacing: 0;
+                font-size: 25px;
+                font-weight: bold;
+                text-align: center;
+                margin-top:25px;
+            }
+            p{
+                margin-left:10%;
+                margin-right:10%;
+                margin-top:10%;
+                text-align: center;
+            }
+        }
+    }
+}

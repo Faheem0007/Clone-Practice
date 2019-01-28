@@ -1,0 +1,96 @@
+.bg{
+    overflow-x:hidden; 
+}
+.container-fluid{
+
+
+    .content-2{
+        margin-left:20%;
+        margin-right:20%;
+        text-align: center;
+    }
+
+    .npadding{
+        margin-left:70px;
+        margin-top: 100px;
+        padding:0px;
+    }
+
+    .team-member{
+        border:1px solid #eee;
+        width:100%;
+        height:400px;
+
+        .img-holder{
+            width:100%;
+            height:80%;
+            position: absolute;
+            overflow: hidden;
+            top:0;
+            background-color: green;
+            img{
+                width: 100%;
+                height:100%;
+            }
+            .overlay{
+                width: 100%;
+                height:100%;
+                transition: all .5s;
+                position: absolute;
+                z-index: 1;
+                opacity: 0;
+                background-image:linear-gradient(to bottom right, rgba(255, 255, 255, 0.027) 100%,rgba(255, 255, 255, 0.123),#4ac3f34b);
+                &:hover{
+                    opacity: 1;
+                }
+
+                &:hover .icon{
+                    left:0;
+                    transition: all .5s;
+                }
+                .icon{
+                    position: absolute;
+                    left:-60px;
+                    transition: all .5s;
+
+                    
+
+                    i{
+                        width:40px;
+                    transition: all .5s;
+                    height:40px;
+                        padding:13px;
+                        margin-top: 5px;
+                        border-radius: 40px;
+                        color:#fff;
+                        background-color: #000;
+
+                        &:hover{
+                            background-color:$main-color;
+                            transition: all .35s;
+                        }
+                    }
+                }
+            }
+
+        }
+                h3{
+                    position: absolute;
+                    bottom:30px;
+                    color:#000;
+                    left:60px;
+                }
+
+                h6{
+                    bottom: 15px;
+                    position: absolute;
+                    left:60px;
+
+                }
+                a{
+                    bottom:0;
+                    left:60px;
+                    position: absolute;
+                }
+    }
+}

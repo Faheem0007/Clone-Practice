@@ -1,0 +1,12 @@
+.container{
+    border-top:2px solid #eee;
+    p{
+        text-align: center;
+        padding:20px 0px;
+
+        span{
+            color:$main-color;
+            font-weight: bold;
+        }
+    }
+}

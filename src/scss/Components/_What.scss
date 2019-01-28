@@ -1,0 +1,104 @@
+.container-fluid{
+    position: relative;
+    .what-frist{
+        margin-left:70px;
+
+        .img-holder{
+            position: absolute;
+            left:-90px;
+            top:50px;
+            z-index: -1;
+        }
+
+        h1{
+            letter-spacing: 0;
+            font-weight: bold;
+        }
+
+        p{
+            margin-top: 40px;
+        }
+
+        h3{
+            margin-top:50px;
+            font-weight: bold;
+            letter-spacing: 0;
+        }
+        button{
+            @include btn('md');
+            margin-top:20px;
+
+            &:hover{
+                transition: .5s;
+                background-color: $second-color;
+                color:#fff;
+            }
+        }
+    }
+
+    .what-snd{
+        .circle{
+            @include circle('lg');
+            right:0;
+            border:25px solid $main-color;
+            height:400px;
+            width:400px;
+            border-radius: 50%;
+
+            
+            @media(max-width:1199px) {
+                right:200px;
+            }
+
+            @media(max-width:800px) {
+                display: none;
+            }
+        }
+        .img-holder{
+            .bg-dots{
+                position: absolute;
+                left:0; 
+
+                
+            @media(max-width:1199px) {
+                left:200px;
+            }
+
+                @media(max-width:800px) {
+                    height:200px;
+                    left:0;
+                }
+            }
+
+            .img-leptop{
+                width: 100%;
+                position: relative;
+                left: 0px;
+                top: 53px;
+                
+            @media(max-width:1199px) {
+                left:100px;
+            }
+
+            @media(max-width:800px) {
+                left:0;
+            }
+            }
+            .sm-dots{
+                position: absolute;
+                left:70%;
+                z-index: -1;
+                top:50%;
+
+                @media(max-width:1199px) {
+                    left:90%;
+                }
+    
+                @media(max-width:900px) {
+                    display: none;
+                }
+            }
+            
+        }
+    }
+}
